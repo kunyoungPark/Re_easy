@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" android:layout_marginBottom="40dp"
+    android:background="#FEFEFE">
+
+    <ImageView
+        android:id="@+id/logo_home"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/logo" />
+    <TableRow
+
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton_plastic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/plasticicon" />
+
+        <ImageButton
+            android:id="@+id/imageButton_paper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/papericon"
+            android:layout_marginLeft="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton_metal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/metalicon"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_glass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/glassicon"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+    </TableRow>
+
+
+</TableLayout>
