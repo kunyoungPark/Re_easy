@@ -21,14 +21,12 @@ public class Inst extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diy_detail);
-        ImageView iv = findViewById(R.id.imageView_detail);
-        WebView wb = findViewById(R.id.vidWeb);
-        ImageButton ib = findViewById(R.id.imageButton_forinst);
+        ImageButton ib = findViewById(R.id.imageView_detail);
 
-
-        wb.setWebViewClient(new WebViewClient());
-        WebSettings webSettings = wb.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+//
+//        wb.setWebViewClient(new WebViewClient());
+//        WebSettings webSettings = wb.getSettings();
+//        webSettings.setJavaScriptEnabled(true);
 
 
 
@@ -37,8 +35,8 @@ public class Inst extends AppCompatActivity {
 
         switch (idx) {
             case 1:
-                iv.setImageResource(R.drawable.metaldiyinst);
-                wb.loadUrl("file:///android_asset/www/metal.html");
+                ib.setImageResource(R.drawable.metaldiyinst);
+//                wb.loadUrl("file:///android_asset/www/metal.html");
                 ib.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -50,8 +48,8 @@ public class Inst extends AppCompatActivity {
                 });
                 break;
             case 2:
-                iv.setImageResource(R.drawable.paperdiyinst);
-                wb.loadUrl("file:///android_asset/www/paper.html");
+                ib.setImageResource(R.drawable.paperdiyinst);
+//                wb.loadUrl("file:///android_asset/www/paper.html");
                 ib.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -63,8 +61,8 @@ public class Inst extends AppCompatActivity {
                 });
                 break;
            case 3:
-               iv.setImageResource(R.drawable.glassdiyinst);
-               wb.loadUrl("file:///android_asset/www/glass.html");
+               ib.setImageResource(R.drawable.glassdiyinst);
+//               wb.loadUrl("file:///android_asset/www/glass.html");
                ib.setOnClickListener(new View.OnClickListener() {
                    @Override
                    public void onClick(View v) {
@@ -76,8 +74,8 @@ public class Inst extends AppCompatActivity {
                });
                 break;
             case 4:
-                iv.setImageResource(R.drawable.plasticdiyinst);
-                wb.loadUrl("file:///android_asset/www/plastic.html");
+                ib.setImageResource(R.drawable.plasticdiyinst);
+//                wb.loadUrl("file:///android_asset/www/plastic.html");
                 ib.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
