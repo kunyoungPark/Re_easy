@@ -27,13 +27,13 @@ public class ScanRes extends AppCompatActivity {
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (resStr == "8808244201014") {
+                if (resStr == "8801056086558") {
                     Intent myit = new Intent(ScanRes.this, Result.class);
                     myit.putExtra("result",resStr);
                     startActivity(myit);
                     finish();
                 }
-                else if (resStr == "0051000012616") {
+                else if (resStr == "8801045592862") {
                     Intent myit = new Intent(ScanRes.this, Result2.class);
                     myit.putExtra("result",resStr);
                     startActivity(myit);
