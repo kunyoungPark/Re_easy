@@ -22,7 +22,14 @@ public class Inst extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diy_detail);
         ImageButton ib = findViewById(R.id.imageView_detail);
+        ImageButton back = findViewById(R.id.imageButton_f);
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 //
 //        wb.setWebViewClient(new WebViewClient());
 //        WebSettings webSettings = wb.getSettings();

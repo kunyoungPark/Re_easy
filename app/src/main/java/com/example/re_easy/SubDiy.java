@@ -12,7 +12,14 @@ public class SubDiy extends AppCompatActivity {
     public void onCreate(Bundle bd){
         super.onCreate(bd);
         setContentView(R.layout.diy_button_page);
+        ImageButton back = findViewById(R.id.imageButton_f);
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         ImageButton pic= findViewById(R.id.imageButton_g);
 
         Intent myit = getIntent();

@@ -22,7 +22,14 @@ public class Plastic extends AppCompatActivity {
         ImageButton imb6 = findViewById(R.id.imageButton6);
         ImageButton imb7 = findViewById(R.id.imageButton7);
         ImageButton imb8 = findViewById(R.id.imageButton8);
+        ImageButton back = findViewById(R.id.imageButton_f);
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         imb1.setOnClickListener(new View.OnClickListener() {
             @Override

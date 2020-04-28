@@ -2,6 +2,8 @@ package com.example.re_easy;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +13,14 @@ public class SubPlastic extends AppCompatActivity {
     public void onCreate(Bundle bd){
         super.onCreate(bd);
         setContentView(R.layout.sub_plastic);
+        ImageButton back = findViewById(R.id.imageButton_f);
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         ImageView cont = findViewById(R.id.imageView_sub_content);
 
         Intent myit = getIntent();
