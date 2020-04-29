@@ -30,11 +30,10 @@
             android:gravity="center">
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p1"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1" />
 
         <ImageButton
@@ -43,7 +42,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p2"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1"/>
 
 
@@ -54,7 +52,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p3"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1"/>
 
         <ImageButton
@@ -63,7 +60,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p4"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1"/>
 
 
@@ -73,7 +69,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p5"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1"/>
 
         <ImageButton
@@ -82,7 +77,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p6"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1"/>
 
 
@@ -93,7 +87,6 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/p7"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             android:layout_weight="1"/>
 
         <ImageButton
@@ -102,7 +95,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#FFFFFFFF"
-            android:scaleType="fitXY"
             app:srcCompat="@drawable/p7"
             tools:visibility="invisible" />
         </LinearLayout>
